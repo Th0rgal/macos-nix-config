@@ -42,7 +42,7 @@
         preferredLightColorTheme = "GitHub Light";
       };
 
-      vscode-pets = { 
+      vscode-pets = {
         petSize = "medium";
         position = "explorer";
       };
@@ -67,10 +67,13 @@
         useVenv = false;
         nileUseVenv = false;
         disableHintValidation = "./**/test_*.cairo";
-        cairoPath =
-          [ "/Users/thomas/workspace/starknetid/naming_contract/lib/" ];
+        cairoPath = [
+          "/Users/thomas/workspace/starknetid/naming_contract/lib/"
+          "/Users/thomas/workspace/starknetid/3sbt/lib/"
+        ];
       };
 
+      extensions.ignoreRecommendations = true;
       jupyter.alwaysTrustNotebooks = true;
       files.exclude = {
         "**/.git" = true;

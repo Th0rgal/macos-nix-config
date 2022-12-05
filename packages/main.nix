@@ -23,6 +23,7 @@
     poetry
     httpie
     black
+    mongosh
   ];
 
 }
