@@ -33,6 +33,7 @@
         inlineSuggest.enabled = true;
         minimap.enabled = false;
         bracketPairColorization.enabled = true;
+        stickyScroll.enabled = true;
       };
 
       workbench = {
