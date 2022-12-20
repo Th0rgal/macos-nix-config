@@ -20,7 +20,6 @@
     nixfmt
     #nodejs
     #nodePackages.pnpm
-    poetry
     httpie
     black
     mongosh
