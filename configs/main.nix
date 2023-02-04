@@ -24,6 +24,7 @@
         # if test -n "$IN_NIX_SHELL"; then return; fi
         [ ! -d "$HOME/.zsh/fsh/" ] && mkdir $HOME/.zsh/fsh/
         export FAST_WORK_DIR=$HOME/.zsh/fsh/;
+        export PATH=$PATH:~/.foundry/bin;
         export PATH=$PATH:~/.cargo/bin;
         export PATH=$PATH:~/.nargo/bin;
         export PATH=$PATH:~/.protostar/dist/protostar/;

@@ -70,7 +70,7 @@
         disableHintValidation = "./**/test_*.cairo";
         cairoPath = [
           "/Users/thomas/workspace/starknetid/naming_contract/lib/"
-          "/Users/thomas/workspace/starknetid/3sbt/lib/"
+          "/Users/thomas/workspace/starknetid/contract/lib/cairo_contracts/src/"
         ];
       };
 
