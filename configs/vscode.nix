@@ -63,6 +63,9 @@
       # Javascript
       javascript.updateImportsOnFileMove.enabled = "always";
 
+      cairo1.languageServerPath =
+        "/Users/thomas/workspace/starknetid/cairo1/erc721/target/release/cairo-language-server";
+
       # Cairo
       cairols = {
         useVenv = false;

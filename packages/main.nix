@@ -7,6 +7,7 @@
     # MISC
     tmate
     pkg-config
+    protobuf
 
     # TERMINAL
     htop
