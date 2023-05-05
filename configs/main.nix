@@ -28,6 +28,8 @@
         export PATH=$PATH:~/.cargo/bin;
         export PATH=$PATH:~/.nargo/bin;
         export PATH=$PATH:~/.protostar/dist/protostar/;
+        export PATH=$PATH:~/scarb/bin/;
+        export PATH=$PATH:~/.cairo/target/release;
         export PATH=$PATH:/opt/homebrew/bin;
         export PATH=$PATH:/usr/local/bin;
       '';

@@ -16,7 +16,7 @@
       };
 
       terminal.integrated = {
-        defaultProfile.osx = "bash";
+        defaultProfile.osx = "zsh";
         profiles.osx = {
           zsh = {
             path = "zsh";
@@ -43,6 +43,8 @@
         preferredLightColorTheme = "GitHub Light";
       };
 
+      redhat.telemetry.enabled = false;
+
       vscode-pets = {
         petSize = "medium";
         position = "explorer";
@@ -54,14 +56,13 @@
       # Python
       python.formatting.provider = "black";
 
-      # Css
-      "[css]" = { editor.defaultFormatter = "MikeBovenlander.formate"; };
-
-      # Ocaml
-      "[ocaml]" = { editor.defaultFormatter = "zepalmer.ocaml-indentation"; };
-
       # Javascript
       javascript.updateImportsOnFileMove.enabled = "always";
+      "[typescriptreact]" = {
+        editor.defaultFormatter = "esbenp.prettier-vscode";
+      };
+      "[typescript]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
+      "[css]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
 
       cairo1.languageServerPath =
         "/Users/thomas/workspace/starknetid/cairo1/cairo1-template/target/release/cairo-language-server";
