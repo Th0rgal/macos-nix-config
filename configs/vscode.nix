@@ -64,6 +64,7 @@
       "[typescript]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
       "[css]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
       "[javascript]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
+      "[json]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
 
       cairo1.languageServerPath =
         "/Users/thomas/workspace/starknetid/cairo1/cairo1-template/target/release/cairo-language-server";
