@@ -1,9 +1,11 @@
 { pkgs, ... }:
 
-{
+let unstable = import <nixpkgs-unstable> { };
+
+in {
   programs.vscode = {
     enable = true;
-    package = pkgs.vscode;
+    package = unstable.vscode;
 
     extensions = (with pkgs.vscode-extensions; [ brettm12345.nixfmt-vscode ]);
 
@@ -65,9 +67,11 @@
       "[css]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
       "[javascript]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
       "[json]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
+      "[html]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
+      "[python]" = { editor.defaultFormatter = "ms-python.black-formatter"; };
 
       cairo1.languageServerPath =
-        "/Users/thomas/workspace/starknetid/cairo1/cairo1-template/target/release/cairo-language-server";
+        "/Users/thomas/.cairo/target/release/cairo-language-server";
 
       # Cairo
       cairols = {
