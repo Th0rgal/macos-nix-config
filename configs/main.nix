@@ -14,7 +14,10 @@
         signByDefault = true;
       };
 
-      extraConfig = { init.defaultBranch = "master"; };
+      extraConfig = {
+        push.autoSetupRemote = true;
+        init.defaultBranch = "master";
+      };
     };
 
     zsh = {
