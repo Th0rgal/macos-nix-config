@@ -70,8 +70,8 @@ in {
       "[html]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
       "[python]" = { editor.defaultFormatter = "ms-python.black-formatter"; };
 
-      cairo1.languageServerPath =
-        "/Users/thomas/.cairo/target/release/cairo-language-server";
+      cairo1.scarbPath =
+        "/Users/thomas/.local/bin/scarb";
 
       # Cairo
       cairols = {
