@@ -33,6 +33,7 @@
         export PATH=$PATH:~/.protostar/dist/protostar/;
         export PATH=$PATH:~/.local/bin;
         export PATH=$PATH:~/.cairo/target/release;
+        export PATH=$PATH:~/.local/share/apibara/bin;
         export PATH=$PATH:/opt/homebrew/bin;
         export PATH=$PATH:/usr/local/bin;
       '';
