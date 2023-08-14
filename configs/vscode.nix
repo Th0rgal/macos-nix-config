@@ -67,11 +67,11 @@ in {
       "[css]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
       "[javascript]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
       "[json]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
+      "[jsonc]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
       "[html]" = { editor.defaultFormatter = "esbenp.prettier-vscode"; };
       "[python]" = { editor.defaultFormatter = "ms-python.black-formatter"; };
 
-      cairo1.scarbPath =
-        "/Users/thomas/.local/bin/scarb";
+      cairo1.scarbPath = "/Users/thomas/.local/bin/scarb";
 
       # Cairo
       cairols = {
