@@ -24,6 +24,7 @@
     httpie
     black
     mongosh
+    deno
   ];
 
 }
