@@ -95,6 +95,7 @@ in {
         "**/Thumbs.db" = true;
         "**/*.olean" = true;
       };
+      git.openRepositoryInParentFolders = "never";
     };
   };
 }
