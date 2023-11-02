@@ -8,6 +8,7 @@
     tmate
     pkg-config
     protobuf
+    grpcurl
 
     # TERMINAL
     htop
