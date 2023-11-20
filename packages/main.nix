@@ -17,6 +17,7 @@
     gnupg
     aria2
     imagemagick
+    fx
 
     # DEVELOPMENT
     nixfmt
