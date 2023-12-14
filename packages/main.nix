@@ -21,6 +21,7 @@
 
     # DEVELOPMENT
     nixfmt
+    nodejs_18
     #nodejs
     #nodePackages.pnpm
     httpie

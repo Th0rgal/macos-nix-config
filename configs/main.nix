@@ -37,6 +37,7 @@
         export PATH=$PATH:/opt/homebrew/bin;
         export PATH=$PATH:/usr/local/bin;
         export PATH=$PATH:~/.bun/bin;
+        export PATH=$PATH:/opt/homebrew/opt/openssl@1.1/bin;
       '';
       plugins = [
         {
