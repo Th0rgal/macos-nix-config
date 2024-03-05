@@ -22,6 +22,7 @@
     # DEVELOPMENT
     nixfmt
     nodejs_18
+    mongodb-tools
     #nodejs
     #nodePackages.pnpm
     httpie
