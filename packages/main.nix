@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
-{
+let unstable = import <nixpkgs-unstable> { };
+in {
   imports = [ ./alacritty.nix ];
 
   home.packages = with pkgs; [
@@ -17,18 +18,21 @@
     gnupg
     aria2
     imagemagick
+    httpie
     fx
 
     # DEVELOPMENT
     nixfmt
     nodejs_18
     mongodb-tools
-    #nodejs
-    #nodePackages.pnpm
-    httpie
     black
     mongosh
     deno
-  ];
+    awscli2
+    gh
 
+    # Fast python env
+    unstable.act
+    unstable.uv
+  ];
 }
