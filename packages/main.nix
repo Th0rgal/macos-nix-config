@@ -1,6 +1,13 @@
 { pkgs, ... }:
 
-let unstable = import <nixpkgs-unstable> { };
+let
+  unstable = import <nixpkgs-unstable> { };
+  # tex = (pkgs.texlive.combine {
+  #   inherit (pkgs.texlive)
+  #     scheme-medium dvisvgm dvipng
+  #     wrapfig amsmath ulem hyperref capt-of;
+  # });
+
 in {
   imports = [ ./alacritty.nix ];
 
@@ -10,6 +17,7 @@ in {
     pkg-config
     protobuf
     grpcurl
+    # tex
 
     # TERMINAL
     htop
@@ -20,6 +28,7 @@ in {
     imagemagick
     httpie
     fx
+    ghostscript
 
     # DEVELOPMENT
     nixfmt
