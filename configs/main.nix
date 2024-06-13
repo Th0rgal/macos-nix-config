@@ -30,6 +30,7 @@
         export PATH=$PATH:~/.foundry/bin;
         export PATH=$PATH:~/.cargo/bin;
         export PATH=$PATH:~/.nargo/bin;
+        export PATH=$PATH:~/.bitcoin/bin;
         export PATH=$PATH:~/.protostar/dist/protostar/;
         export PATH=$PATH:~/.local/bin;
         export PATH=$PATH:~/.cairo/target/release;

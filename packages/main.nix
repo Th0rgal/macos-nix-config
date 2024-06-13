@@ -17,6 +17,7 @@ in {
     pkg-config
     protobuf
     grpcurl
+    websocat
     # tex
 
     # TERMINAL
