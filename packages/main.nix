@@ -18,6 +18,7 @@ in {
     protobuf
     grpcurl
     websocat
+    ngrok
     # tex
 
     # TERMINAL
