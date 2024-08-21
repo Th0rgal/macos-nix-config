@@ -33,7 +33,7 @@ in {
     ghostscript
 
     # DEVELOPMENT
-    nixfmt
+    nixfmt-classic
     nodejs_18
     mongodb-tools
     black

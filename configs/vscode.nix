@@ -4,7 +4,7 @@ let unstable = import <nixpkgs-unstable> { };
 
 in {
   programs.vscode = {
-    enable = true;
+    enable = false;
     package = unstable.vscode;
 
     extensions = (with pkgs.vscode-extensions; [ brettm12345.nixfmt-vscode ]);
@@ -36,6 +36,8 @@ in {
         minimap.enabled = false;
         bracketPairColorization.enabled = true;
         stickyScroll.enabled = true;
+        formatOnSave = true;
+        codeActionsOnSave.source.organizeImports = true;
       };
 
       workbench = {
@@ -54,6 +56,15 @@ in {
 
       # Rust
       rust-client.rustupPath = "${pkgs.rustup}/bin/rustup";
+      rust-analyzer = {
+        completion = {
+          autoimport.enable = true;
+          callable.snippets = "fill_arguments";
+        };
+        diagnostics.enable = true;
+        checkOnSave.command = "clippy";
+        cargo.features = "all";
+      };
 
       # Python
       python.formatting.provider = "black";
