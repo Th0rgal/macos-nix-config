@@ -37,7 +37,7 @@ in {
     nodejs_18
     mongodb-tools
     black
-    mongosh
+    unstable.mongosh
     deno
     awscli2
     gh
