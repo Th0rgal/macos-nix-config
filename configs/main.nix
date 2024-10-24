@@ -40,6 +40,7 @@
         export PATH=$PATH:~/.bun/bin;
         export PATH=$PATH:~/.starkli/bin;
         export PATH=$PATH:/opt/homebrew/opt/openssl@1.1/bin;
+        alias rm="echo Use 'rip' instead of rm."
       '';
       plugins = [
         {
