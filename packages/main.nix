@@ -35,6 +35,8 @@ in {
     # DEVELOPMENT
     nixfmt-classic
     nodejs_18
+    gradle
+    zulu
     mongodb-tools
     black
     unstable.mongosh
@@ -46,4 +48,8 @@ in {
     unstable.act
     unstable.uv
   ];
+
+  home.sessionVariables = {
+    JAVA_HOME = "${pkgs.zulu}";  # Set the JAVA_HOME variable for Zulu Java 21
+  };
 }

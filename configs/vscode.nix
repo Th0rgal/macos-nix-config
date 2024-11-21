@@ -107,6 +107,15 @@ in {
         "**/*.olean" = true;
       };
       git.openRepositoryInParentFolders = "never";
+      
+      # Java
+      java.configuration.runtimes = [
+        {
+          name = "JavaSE-21";
+          path = "${pkgs.zulu}/lib/openjdk";
+          default = true;
+        }
+      ];
     };
   };
 }
