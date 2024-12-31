@@ -34,7 +34,6 @@ in {
 
     # DEVELOPMENT
     nixfmt-classic
-    nodejs_18
     gradle
     zulu
     mongodb-tools

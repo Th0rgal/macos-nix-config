@@ -41,6 +41,12 @@
         export PATH=$PATH:~/.starkli/bin;
         export PATH=$PATH:/opt/homebrew/opt/openssl@1.1/bin;
         export PATH=$PATH:/Users/thomas/Library/Application\ Support/org.dfinity.dfx/bin;
+
+        # NVM configuration
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
         alias rm="echo Use 'rip' instead of rm."
       '';
       plugins = [
