@@ -31,21 +31,21 @@
         export PATH=$PATH:~/.cargo/bin;
         export PATH=$PATH:~/.nargo/bin;
         export PATH=$PATH:~/.bitcoin/bin;
-        export PATH=$PATH:~/.protostar/dist/protostar/;
+        # export PATH=$PATH:~/.protostar/dist/protostar/;
         export PATH=$PATH:~/.local/bin;
         export PATH=$PATH:~/.cairo/target/release;
-        export PATH=$PATH:~/.local/share/apibara/bin;
+        # export PATH=$PATH:~/.local/share/apibara/bin;
         export PATH=$PATH:/opt/homebrew/bin;
         export PATH=$PATH:/usr/local/bin;
         export PATH=$PATH:~/.bun/bin;
         export PATH=$PATH:~/.starkli/bin;
         export PATH=$PATH:/opt/homebrew/opt/openssl@1.1/bin;
-        export PATH=$PATH:/Users/thomas/Library/Application\ Support/org.dfinity.dfx/bin;
+        # export PATH=$PATH:/Users/thomas/Library/Application\ Support/org.dfinity.dfx/bin;
 
         # NVM configuration
-        export NVM_DIR="$HOME/.nvm"
-        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+        # export NVM_DIR="$HOME/.nvm"
+        # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+        # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
         alias rm="echo Use 'rip' instead of rm."
       '';
