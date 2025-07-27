@@ -40,6 +40,7 @@
         export PATH=$PATH:~/.bun/bin;
         export PATH=$PATH:~/.starkli/bin;
         export PATH=$PATH:/opt/homebrew/opt/openssl@1.1/bin;
+        export PATH=$PATH:~/.bun/install/global/node_modules/supabase/bin;
         # export PATH=$PATH:/Users/thomas/Library/Application\ Support/org.dfinity.dfx/bin;
 
         # NVM configuration

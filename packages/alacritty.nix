@@ -14,7 +14,7 @@
         };
         decorations = "buttonless";
         dimensions = {
-          lines = 75;
+          lines = 35;
           columns = 100;
         };
       };
