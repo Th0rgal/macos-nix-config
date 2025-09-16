@@ -42,6 +42,7 @@ in {
     deno
     awscli2
     gh
+    git-lfs
 
     # Fast python env
     unstable.act
