@@ -51,5 +51,7 @@ in {
 
   home.sessionVariables = {
     JAVA_HOME = "${pkgs.zulu}";  # Set the JAVA_HOME variable for Zulu Java 21
+    LANG = "en_US.UTF-8";
+    LC_MESSAGES = "en_US.UTF-8";
   };
 }

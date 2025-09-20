@@ -74,16 +74,16 @@
             sha256 = "0h7f27gz586xxw7cc0wyiv3bx0x3qih2wwh05ad85bh2h834ar8d";
           };
         }
-        {
-          name = "powerlevel10k";
-          src = pkgs.zsh-powerlevel10k;
-          file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-        }
-        {
-          name = "powerlevel10k-config";
-          src = lib.cleanSource ./p10k-config;
-          file = "p10k.zsh";
-        }
+        # {
+        #   name = "powerlevel10k";
+        #   src = pkgs.zsh-powerlevel10k;
+        #   file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+        # }
+        # {
+        #   name = "powerlevel10k-config";
+        #   src = lib.cleanSource ./p10k-config;
+        #   file = "p10k.zsh";
+        # }
       ];
     };
   };
