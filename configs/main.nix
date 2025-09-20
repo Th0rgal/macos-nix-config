@@ -54,6 +54,15 @@
         # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
         alias rm="echo Use 'rip' instead of rm."
+
+        # Minimal git prompt using built-in zsh vcs_info
+        autoload -Uz vcs_info add-zsh-hook
+        zstyle ':vcs_info:*' enable git
+        zstyle ':vcs_info:git*' formats ' (%b%u%c)'
+        zstyle ':vcs_info:git*' actionformats ' (%b|%a)'
+        add-zsh-hook precmd vcs_info
+        setopt prompt_subst
+        PROMPT='%F{cyan}%~%f''${vcs_info_msg_0_} %# '
       '';
       plugins = [
         {
