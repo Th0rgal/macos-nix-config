@@ -13,6 +13,10 @@ in {
 
   home.packages = with pkgs; [
     # MISC
+    coreutils
+    gnumake
+    lowdown
+    gcc
     tmate
     pkg-config
     protobuf
