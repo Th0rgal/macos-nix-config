@@ -54,15 +54,6 @@
         # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
         alias rm="echo Use 'rip' instead of rm."
-
-        # Minimal git prompt using built-in zsh vcs_info
-        autoload -Uz vcs_info add-zsh-hook
-        zstyle ':vcs_info:*' enable git
-        zstyle ':vcs_info:git*' formats ' (%b%u%c)'
-        zstyle ':vcs_info:git*' actionformats ' (%b|%a)'
-        add-zsh-hook precmd vcs_info
-        setopt prompt_subst
-        PROMPT='%F{cyan}%~%f''${vcs_info_msg_0_} %# '
       '';
       plugins = [
         {
@@ -83,16 +74,16 @@
             sha256 = "0h7f27gz586xxw7cc0wyiv3bx0x3qih2wwh05ad85bh2h834ar8d";
           };
         }
-        # {
-        #   name = "powerlevel10k";
-        #   src = pkgs.zsh-powerlevel10k;
-        #   file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-        # }
-        # {
-        #   name = "powerlevel10k-config";
-        #   src = lib.cleanSource ./p10k-config;
-        #   file = "p10k.zsh";
-        # }
+        {
+          name = "powerlevel10k";
+          src = pkgs.zsh-powerlevel10k;
+          file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+        }
+        {
+          name = "powerlevel10k-config";
+          src = lib.cleanSource ./p10k-config;
+          file = "p10k.zsh";
+        }
       ];
     };
   };
