@@ -16,7 +16,6 @@ in {
     coreutils
     gnumake
     lowdown
-    gcc
     tmate
     pkg-config
     protobuf
