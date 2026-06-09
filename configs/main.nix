@@ -50,6 +50,13 @@
         export PATH="/opt/homebrew/opt/node@24/bin:$PATH";
         export PATH="$HOME/Library/Python/3.9/bin:$PATH";
 
+        # Grok CLI (installed via https://x.ai/cli/install.sh)
+        export PATH="$HOME/.grok/bin:$PATH";
+        fpath=(~/.grok/completions/zsh $fpath);
+
+        # Gauss (Lean workflow orchestrator)
+        export GAUSS_HOME="$HOME/.gauss";
+
         # export PATH=$PATH:/Users/thomas/Library/Application\ Support/org.dfinity.dfx/bin;
 
         # NVM configuration
